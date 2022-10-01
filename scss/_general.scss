@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.063rem;
+}
+
 body {
     margin: auto 0; /*remove initial white space around the body*/
     font-family: 'Muli', sans-serif;
@@ -41,9 +46,6 @@ body {
     }
 }
 
-
-
-
 /*COVER*/
 .container {
     display: flex; /*using flex because i dont have grid items in this section*/
@@ -58,8 +60,8 @@ body {
 
 .grid-wrapper {
     display: grid;
-    gap: 50px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 3.125rem;
+    grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
     width: 100%;
     max-width: 1170px;
     height: 100vh;

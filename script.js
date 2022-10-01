@@ -9,8 +9,11 @@ const navLinks = document.querySelectorAll('.link')
 
 toggle.addEventListener('click', () => nav.classList.toggle('active'));
 
-if (document.documentElement.clientWidth <= 810) {
-    navLinks.forEach(link => link.addEventListener("click", function(e) {
-        nav.classList.toggle('active')
-    }));  
-}
+//toogle navigation when width <= 810px automatically
+window.addEventListener('resize', function(event) {
+    if (document.documentElement.clientWidth <= 810) {
+        navLinks.forEach(link => link.addEventListener("click", function(e) {
+            nav.classList.toggle('active')
+        }));  
+    }
+}, true);
